@@ -49,6 +49,16 @@ main h1 {
 }
 main .menu_main {
   display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 2em;
+}
+main .menu_main input, main .menu_main select {
+  font-size: 14px;
+  height: 2rem;
+  width: 300px;
+  display: inline-block;
+  margin: auto 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
