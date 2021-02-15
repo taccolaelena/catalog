@@ -21,14 +21,16 @@ html .menu ul li {
   color: #8073c0;
   font-size: 0.85rem;
   height: 3rem;
+  display: flex;
+  align-items: center;
 }
 html .menu ul a {
   text-decoration: none;
 }
 html .menu ul li:hover {
   color: #059bff;
-  border-bottom: 2px solid #059bff;
-  border-bottom-width: 2px;
+  border-bottom: 1px solid #059bff;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #059bff;
 }
