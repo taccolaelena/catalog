@@ -20,6 +20,7 @@ html .menu ul li {
   margin: 0 1rem;
   color: #8073c0;
   font-size: 0.85rem;
+  height: 3rem;
 }
 html .menu ul a {
   text-decoration: none;
