@@ -86,5 +86,8 @@ main .menu_main select:focus, main .menu_main select:hover, main .menu_main form
   outline: none;
   border-radius: 5px;
 }
+main h2 {
+  font-weight: 500;
+}
 
 /*# sourceMappingURL=styles.css.map */
