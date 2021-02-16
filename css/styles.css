@@ -93,6 +93,15 @@ main .trendeng_episodes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 10px;
+}
+main .trendeng_episodes a {
+  text-decoration: none;
+  color: black;
+}
+main .trendeng_episodes a:hover {
+  color: #059bff;
 }
 main .trendeng_episodes .component {
   display: flex;
@@ -101,6 +110,19 @@ main .trendeng_episodes .component {
 main .trendeng_episodes .component img {
   height: 200px;
   width: 200px;
+  display: block;
+  position: relative;
+  object-fit: cover;
+}
+main .trendeng_episodes .component img img:hover, main .trendeng_episodes .component img img:focus {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  transition: opacity 1s ease-in-out;
+}
+main .trendeng_episodes .component h4 {
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 0.6rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

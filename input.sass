@@ -88,16 +88,44 @@ main
         font-weight: 500
 
     .trendeng_episodes
+        
         display: grid
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr
         grid-template-rows: 1fr 1fr
+        column-gap: 15px
+        row-gap: 10px
+        
+
+        a
+            text-decoration: none
+            color: black
+            
+
+        a:hover
+            color: #059bff
 
         .component
             display: flex
             flex-direction: column
+            
+            
 
             img
                 height: 200px
                 width: 200px
+                display: block
+                position: relative
+                // картинки квардратные и не сжимаются
+                object-fit: cover
+                
+                img:hover, img:focus
+                        background-color: rgba(0, 0, 0, 0.5)
+                        position: absolute
+                        transition: opacity 1s ease-in-out
+
+            h4
+               font-weight: 400 
+               font-size: 14px
+               margin-top: 0.6rem
 
 
