@@ -58,12 +58,33 @@ main .menu_main {
   height: 2em;
   margin: 4rem 0;
 }
-main .menu_main input, main .menu_main select {
+main .menu_main select, main .menu_main form {
   font-size: 14px;
   height: 2rem;
   width: 300px;
   display: inline-block;
-  padding: auto 10px;
+  color: grey;
+  border-radius: 5px 5px;
+  background-color: white;
+  padding: 0 5px;
+}
+main .menu_main form {
+  display: flex;
+  justify-content: space-between;
+}
+main .menu_main form input {
+  border: none;
+  outline: none;
+}
+main .menu_main form button {
+  background-color: white;
+  border: none;
+  color: grey;
+}
+main .menu_main select:focus, main .menu_main select:hover, main .menu_main form:focus, main .menu_main form:hover {
+  border: 1px solid #059bff;
+  outline: none;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
