@@ -89,5 +89,18 @@ main .menu_main select:focus, main .menu_main select:hover, main .menu_main form
 main h2 {
   font-weight: 500;
 }
+main .trendeng_episodes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+main .trendeng_episodes .component {
+  display: flex;
+  flex-direction: column;
+}
+main .trendeng_episodes .component img {
+  height: 200px;
+  width: 200px;
+}
 
 /*# sourceMappingURL=styles.css.map */
