@@ -108,14 +108,13 @@ main .trendeng_episodes .component {
   flex-direction: column;
 }
 main .trendeng_episodes .component img {
-  height: 200px;
-  width: 200px;
+  height: 100%;
+  width: 100%;
   display: block;
   object-fit: cover;
 }
 main .trendeng_episodes .component img:hover {
   opacity: 0.5;
-  background-image: url "/home/elena/work/catalog/images/play-circle-regular.svg";
 }
 main .trendeng_episodes .component h4 {
   font-weight: 400;
@@ -151,7 +150,7 @@ main .trendeng_episodes .component_10:hover .overlay .icon {
   text-align: center;
 }
 main .trendeng_episodes .component_10:hover .overlay .icon .fa fa-play-circle-o:hover {
-  color: #eee;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
