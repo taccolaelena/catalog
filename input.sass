@@ -110,7 +110,7 @@ main
                 height: 200px
                 width: 200px
                 display: block
-                position: relative
+                // position: relative
                 // картинки квардратные и не сжимаются
                 object-fit: cover
 
@@ -123,3 +123,35 @@ main
                 font-weight: 400
                 font-size: 14px
                 margin-top: 0.6rem
+
+        .component_10
+            position: relative
+
+            .overlay
+                position: absolute
+                top: 0
+                bottom: 0
+                left: 0
+                right: 0
+                height: 100%
+                width: 100%
+                opacity: 0
+                transition: .3s ease
+                background-color: black
+
+        .component_10:hover .overlay
+            opacity: 0.6
+
+            .icon
+                color: white
+                font-size: 100px
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                -ms-transform: translate(-50%, -50%)
+                text-align: center
+
+                .fa fa-play-circle-o:hover
+                    color: #eee
+

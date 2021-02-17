@@ -111,7 +111,6 @@ main .trendeng_episodes .component img {
   height: 200px;
   width: 200px;
   display: block;
-  position: relative;
   object-fit: cover;
 }
 main .trendeng_episodes .component img:hover {
@@ -122,6 +121,37 @@ main .trendeng_episodes .component h4 {
   font-weight: 400;
   font-size: 14px;
   margin-top: 0.6rem;
+}
+main .trendeng_episodes .component_10 {
+  position: relative;
+}
+main .trendeng_episodes .component_10 .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: black;
+}
+main .trendeng_episodes .component_10:hover .overlay {
+  opacity: 0.6;
+}
+main .trendeng_episodes .component_10:hover .overlay .icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+main .trendeng_episodes .component_10:hover .overlay .icon .fa fa-play-circle-o:hover {
+  color: #eee;
 }
 
 /*# sourceMappingURL=styles.css.map */
