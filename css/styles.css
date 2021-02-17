@@ -206,4 +206,9 @@ main .miss-shows .component:hover .overlay .icon .fa fa-play-circle-o:hover, mai
   color: white;
 }
 
+footer {
+  background-color: #231e29;
+  padding: 0 20%;
+}
+
 /*# sourceMappingURL=styles.css.map */
