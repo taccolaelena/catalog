@@ -61,7 +61,7 @@ main
             display: inline-block
             color: grey
             border-radius: 5px 5px
-
+            border: 1px solid lightgrey
             background-color: white
             padding: 0 5px
 
@@ -87,7 +87,7 @@ main
     h2
         font-weight: 500
 
-    .trendeng_episodes
+    .trendeng_episodes 
 
         display: grid
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr
@@ -105,27 +105,19 @@ main
         .component
             display: flex
             flex-direction: column
+            position: relative
 
             img
-                height: 100%
-                width: 100%
+                height: 200px
+                width: 200px
                 display: block
-                // position: relative
                 // картинки квардратные и не сжимаются
                 object-fit: cover
-
-                &:hover
-                    opacity: 0.5
-                    // background-image: url ('images/play-circle-regular.svg')
-                        // transition: opacity 1s ease-in-out
 
             h4
                 font-weight: 400
                 font-size: 14px
                 margin-top: 0.6rem
-
-        .component_10
-            position: relative
 
             .overlay
                 position: absolute
@@ -133,13 +125,72 @@ main
                 bottom: 0
                 left: 0
                 right: 0
-                height: 100%
-                width: 100%
+                height: 200px
+                width: 200px
                 opacity: 0
                 transition: .3s ease
                 background-color: black
 
-        .component_10:hover .overlay
+        .component:hover .overlay
+            opacity: 0.6
+
+            .icon
+                color: white
+                font-size: 100px
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                -ms-transform: translate(-50%, -50%)
+                text-align: center
+
+                .fa fa-play-circle-o:hover
+                    color: white
+
+    .miss-shows, .miss-podcasters
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+        grid-template-rows: 1fr 
+        column-gap: 15px
+        // row-gap: 10px
+
+        a
+            text-decoration: none
+            color: black
+
+        a:hover
+            color: #059bff
+
+        .component
+            display: flex
+            flex-direction: column
+            position: relative
+
+            img
+                height: 200px
+                width: 200px
+                display: block
+                // картинки квардратные и не сжимаются
+                object-fit: cover
+
+            h4
+                font-weight: 400
+                font-size: 14px
+                margin-top: 0.6rem
+
+            .overlay
+                position: absolute
+                top: 0
+                bottom: 0
+                left: 0
+                right: 0
+                height: 200px
+                width: 200px
+                opacity: 0
+                transition: .3s ease
+                background-color: black
+
+        .component:hover .overlay
             opacity: 0.6
 
             .icon
