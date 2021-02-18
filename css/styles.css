@@ -42,7 +42,7 @@ html .logo img {
 main {
   font-family: "Lato", sans-serif;
   background-color: whitesmoke;
-  padding: 0 20%;
+  padding: 0 20% 4rem;
 }
 main h1 {
   font-size: 48px;
