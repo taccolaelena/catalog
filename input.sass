@@ -90,7 +90,7 @@ main
     .trendeng_episodes
 
         display: grid
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
         grid-template-rows: 1fr 1fr
         column-gap: 15px
         row-gap: 10px
@@ -149,7 +149,7 @@ main
 
     .miss-shows, .miss-podcasters
         display: grid
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+        grid-template-columns:  repeat(auto-fill, minmax(200px, 1fr))
         grid-template-rows: 1fr
         column-gap: 15px
         // row-gap: 10px
@@ -221,9 +221,7 @@ footer
         display: grid
         grid-template-columns: 20% 1fr 20%
         grid-template-rows: 1fr 15%
-        // grid-template-areas:
-            // ".logo .list-footer .contact"
-            // ".copyright .copyright .copyright"
+
 
         a
             text-decoration: none
