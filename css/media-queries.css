@@ -30,6 +30,19 @@
     transition: all 0.2s;
   }
 
+  body main h1 {
+    font-size: 24px;
+  }
+
+  body main .content h2 {
+    font-size: 18px;
+  }
+
+  body main .menu_main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   body footer {
     padding: 0 1%;
     transition: all 0.2s;
@@ -38,6 +51,11 @@
 
   body footer .content-footer .copyright {
     font-size: 8px;
+  }
+
+  body footer .contact .community {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
