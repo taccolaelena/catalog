@@ -1,59 +1,158 @@
-@media only screen and (max-width: 992px) {
-  body header {
+@media (min-width: 993px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+@media (min-width: 481px) and (max-width: 992px) {
+  #menu__toggle {
+    opacity: 0;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    right: 0;
+  }
+
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20%;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: 0.25s;
+  }
+
+  .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+
+  .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: 100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: 0.25s;
+  }
+
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  header {
     padding: 0 5%;
     transition: all 0.2s;
   }
 
-  body main {
+  main {
     padding: 0 5%;
     transition: all 0.2s;
   }
 
-  body footer {
+  footer {
     padding: 0 5%;
     transition: all 0.2s;
     font-size: 12px;
   }
 
-  body footer .content-footer .copyright {
+  footer .content-footer .copyright {
     font-size: 8px;
   }
 }
-@media only screen and (max-width: 480px) {
-  body header {
+@media (max-width: 480px) {
+  .menu {
+    display: none;
+  }
+
+  header {
     padding: 0 1%;
     transition: all 0.2s;
   }
 
-  body main {
+  main {
     padding: 0 1%;
     transition: all 0.2s;
   }
 
-  body main h1 {
+  main h1 {
     font-size: 24px;
   }
 
-  body main .content h2 {
+  main .content h2 {
     font-size: 18px;
   }
 
-  body main .menu_main {
+  main .menu_main {
     display: flex;
     flex-wrap: wrap;
   }
 
-  body footer {
+  footer {
     padding: 0 1%;
     transition: all 0.2s;
     font-size: 10px;
   }
 
-  body footer .content-footer .copyright {
+  footer .content-footer .copyright {
     font-size: 8px;
   }
 
-  body footer .contact .community {
+  footer .contact .community {
     display: flex;
     flex-wrap: wrap;
   }
