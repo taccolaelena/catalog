@@ -1,0 +1,44 @@
+@media only screen and (max-width: 992px) {
+  body header {
+    padding: 0 5%;
+    transition: all 0.2s;
+  }
+
+  body main {
+    padding: 0 5%;
+    transition: all 0.2s;
+  }
+
+  body footer {
+    padding: 0 5%;
+    transition: all 0.2s;
+    font-size: 12px;
+  }
+
+  body footer .content-footer .copyright {
+    font-size: 8px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body header {
+    padding: 0 1%;
+    transition: all 0.2s;
+  }
+
+  body main {
+    padding: 0 1%;
+    transition: all 0.2s;
+  }
+
+  body footer {
+    padding: 0 1%;
+    transition: all 0.2s;
+    font-size: 10px;
+  }
+
+  body footer .content-footer .copyright {
+    font-size: 8px;
+  }
+}
+
+/*# sourceMappingURL=media-queries.css.map */

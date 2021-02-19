@@ -4,269 +4,270 @@ html
     body
         margin: 0
 
-    header
-        display: flex
-        align-items: center
-        justify-content: space-between
-        height: 65px
-        border-bottom: 1px solid rgb(223, 226, 230)
-        padding: 0 20%
-    .menu ul
-        list-style-type: none
-        display: flex
-        li
-            flex-direction: row
-            margin: 0 1rem
-            color: rgb(128, 115, 192)
-            font-size: 0.85rem
-            height: 3rem
+        header
             display: flex
             align-items: center
-
-        a
-            text-decoration: none
-        li:hover
-            color: #059bff
-            border-bottom: 1px solid #059bff
-            border-bottom-width: 1px
-            border-bottom-style: solid
-            border-bottom-color: rgb(5, 155, 255)
-
-    .logo img
-        height: 1.5rem
-
-main
-    font-family: 'Lato', sans-serif
-    background-color: rgb(245,245,245)
-    padding: 0 20% 4rem
-    
-    h1
-        font-size: 48px
-        font-weight: 500
-        text-align: center
-        margin: 0
-        padding-top: 4rem
-
-    .menu_main
-        display: flex
-        flex-wrap: nowrap
-        justify-content: space-between
-        height: 2em
-        margin: 4rem 0
-
-        select, form
-            font-size: 14px
-            height: 2rem
-            width: 300px
-            display: inline-block
-            color: grey
-            border-radius: 5px 5px
-            border: 1px solid lightgrey
-            background-color: white
-            padding: 0 5px
-
-        form
-            display: flex
             justify-content: space-between
+            height: 65px
+            border-bottom: 1px solid rgb(223, 226, 230)
+            padding: 0 20%
 
-            input
-                border: none
-                outline: none
-
-            button
-                background-color: white
-                border: none
-                color: grey
-
-        select:focus, select:hover, form:focus, form:hover
-            border: 1px solid #059bff
-            // box-shadow: 0px 0px 5px 1px rgba(5, 155, 255, 0.29)
-            outline: none
-            border-radius: 5px
-
-    h2
-        font-weight: 500
-
-    .trendeng_episodes
-
-        display: grid
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
-        grid-template-rows: 1fr 1fr
-        column-gap: 15px
-        row-gap: 10px
-
-        a
-            text-decoration: none
-            color: black
-
-        a:hover
-            color: #059bff
-
-        .component
-            display: flex
-            flex-direction: column
-            position: relative
-
-            img
-                height: 200px
-                width: 200px
-                display: block
-                // картинки квардратные и не сжимаются
-                object-fit: cover
-
-            h4
-                font-weight: 400
-                font-size: 14px
-                margin-top: 0.6rem
-
-            .overlay
-                position: absolute
-                top: 0
-                bottom: 0
-                left: 0
-                right: 0
-                height: 200px
-                width: 200px
-                opacity: 0
-                transition: .3s ease
-                background-color: black
-
-        .component:hover .overlay
-            opacity: 0.6
-
-            .icon
-                color: white
-                font-size: 100px
-                position: absolute
-                top: 50%
-                left: 50%
-                transform: translate(-50%, -50%)
-                -ms-transform: translate(-50%, -50%)
-                text-align: center
-
-                .fa fa-play-circle-o:hover
-                    color: white
-
-    .miss-shows, .miss-podcasters
-        display: grid
-        grid-template-columns:  repeat(auto-fill, minmax(200px, 1fr))
-        grid-template-rows: 1fr
-        column-gap: 15px
-        // row-gap: 10px
-
-        a
-            text-decoration: none
-            color: black
-
-        a:hover
-            color: #059bff
-
-        .component
-            display: flex
-            flex-direction: column
-            position: relative
-
-            img
-                height: 200px
-                width: 200px
-                display: block
-                // картинки квардратные и не сжимаются
-                object-fit: cover
-
-            h4
-                font-weight: 400
-                font-size: 14px
-                margin-top: 0.6rem
-
-            .overlay
-                position: absolute
-                top: 0
-                bottom: 0
-                left: 0
-                right: 0
-                height: 200px
-                width: 200px
-                opacity: 0
-                transition: .3s ease
-                background-color: black
-
-        .component:hover .overlay
-            opacity: 0.6
-
-            .icon
-                color: white
-                font-size: 100px
-                position: absolute
-                top: 50%
-                left: 50%
-                transform: translate(-50%, -50%)
-                -ms-transform: translate(-50%, -50%)
-                text-align: center
-
-                .fa fa-play-circle-o:hover
-                    color: white
-
-footer
-    background-color: rgb(35,30,41)
-    padding: 0 20% 40px 20%
-    color: white
-    font-weight: 100
-    font-size: 16px
-    
-
-    h4
-        font-weight: 100
-
-    .content-footer
-        display: grid
-        grid-template-columns: 20% 1fr 20%
-        grid-template-rows: 1fr 15%
-
-
-        a
-            text-decoration: none
-            color: white
-
-        a:hover
-            text-decoration: underline
-
-        .logo
-            justify-self: start
-            align-self: center
-
-        .list-footer
-            justify-self: end
-            align-self: top
-            padding: 2rem 20% 0 0
-
-            ul
+            .menu ul
                 list-style-type: none
+                display: flex
 
                 li
-                    line-height: 3
-
-        .contact
-            padding-top: 3rem
-
-            .mailto
-                line-height: 0.2
-                padding-bottom: 3rem
-
-            .community
-                display: flex
-                justify-content: flex-start
+                    flex-direction: row
+                    margin: 0 1rem
+                    color: rgb(128, 115, 192)
+                    font-size: 0.85rem
+                    height: 3rem
+                    display: flex
+                    align-items: center
 
                 a
-                    padding-right: 1rem
+                    text-decoration: none
 
-        .copyright
-            font-size: 13px
-            padding: 2em 0 1em 0
+                li:hover
+                    color: #059bff
+                    border-bottom: 1px solid #059bff
+                    border-bottom-width: 1px
+                    border-bottom-style: solid
+                    border-bottom-color: rgb(5, 155, 255)
+
+            .logo img
+                height: 1.5rem
+
+    main
+        font-family: 'Lato', sans-serif
+        background-color: rgb(245,245,245)
+        padding: 0 20% 4rem
+
+        h1
+            font-size: 48px
+            font-weight: 500
+            text-align: center
             margin: 0
-            grid-column-start: 1
-            grid-column-end: 4
-            display: flex
-            justify-content: space-between
+            padding-top: 4rem
 
-            .privac a
-                padding-left: 2em
+        .menu_main
+            display: flex
+            flex-wrap: nowrap
+            justify-content: space-between
+            height: 2em
+            margin: 4rem 0
+
+            select, form
+                font-size: 14px
+                height: 2rem
+                width: 300px
+                display: inline-block
+                color: grey
+                border-radius: 5px 5px
+                border: 1px solid lightgrey
+                background-color: white
+                padding: 0 5px
+
+            form
+                display: flex
+                justify-content: space-between
+
+                input
+                    border: none
+                    outline: none
+
+                button
+                    background-color: white
+                    border: none
+                    color: grey
+
+            select:focus, select:hover, form:focus, form:hover
+                border: 1px solid #059bff
+                // box-shadow: 0px 0px 5px 1px rgba(5, 155, 255, 0.29)
+                outline: none
+                border-radius: 5px
+
+        h2
+            font-weight: 500
+
+        .trendeng_episodes
+
+            display: grid
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+            grid-template-rows: 1fr 1fr
+            column-gap: 15px
+            row-gap: 10px
+
+            a
+                text-decoration: none
+                color: black
+
+            a:hover
+                color: #059bff
+
+            .component
+                display: flex
+                flex-direction: column
+                position: relative
+
+                img
+                    height: 200px
+                    width: 200px
+                    display: block
+                    // картинки квардратные и не сжимаются
+                    object-fit: cover
+
+                h4
+                    font-weight: 400
+                    font-size: 14px
+                    margin-top: 0.6rem
+
+                .overlay
+                    position: absolute
+                    top: 0
+                    bottom: 0
+                    left: 0
+                    right: 0
+                    height: 200px
+                    width: 200px
+                    opacity: 0
+                    transition: .3s ease
+                    background-color: black
+
+            .component:hover .overlay
+                opacity: 0.6
+
+                .icon
+                    color: white
+                    font-size: 100px
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    -ms-transform: translate(-50%, -50%)
+                    text-align: center
+
+                    .fa fa-play-circle-o:hover
+                        color: white
+
+        .miss-shows, .miss-podcasters
+            display: grid
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+            grid-template-rows: 1fr
+            column-gap: 15px
+            // row-gap: 10px
+
+            a
+                text-decoration: none
+                color: black
+
+            a:hover
+                color: #059bff
+
+            .component
+                display: flex
+                flex-direction: column
+                position: relative
+
+                img
+                    height: 200px
+                    width: 200px
+                    display: block
+                    // картинки квардратные и не сжимаются
+                    object-fit: cover
+
+                h4
+                    font-weight: 400
+                    font-size: 14px
+                    margin-top: 0.6rem
+
+                .overlay
+                    position: absolute
+                    top: 0
+                    bottom: 0
+                    left: 0
+                    right: 0
+                    height: 200px
+                    width: 200px
+                    opacity: 0
+                    transition: .3s ease
+                    background-color: black
+
+            .component:hover .overlay
+                opacity: 0.6
+
+                .icon
+                    color: white
+                    font-size: 100px
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    -ms-transform: translate(-50%, -50%)
+                    text-align: center
+
+                    .fa fa-play-circle-o:hover
+                        color: white
+
+    footer
+        background-color: rgb(35,30,41)
+        padding: 0 20% 40px 20%
+        color: white
+        font-weight: 100
+        font-size: 16px
+
+        h4
+            font-weight: 100
+
+        .content-footer
+            display: grid
+            grid-template-columns: 20% 1fr 20%
+            grid-template-rows: 1fr 15%
+
+            a
+                text-decoration: none
+                color: white
+
+            a:hover
+                text-decoration: underline
+
+            .logo
+                justify-self: start
+                align-self: center
+
+            .list-footer
+                justify-self: end
+                align-self: top
+                padding: 2rem 20% 0 0
+
+                ul
+                    list-style-type: none
+
+                    li
+                        line-height: 3
+
+            .contact
+                padding-top: 3rem
+
+                .mailto
+                    line-height: 0.2
+                    padding-bottom: 3rem
+
+                .community
+                    display: flex
+                    justify-content: flex-start
+
+                    a
+                        padding-right: 1rem
+
+            .copyright
+                font-size: 13px
+                padding: 2em 0 1em 0
+                margin: 0
+                grid-column-start: 1
+                grid-column-end: 4
+                display: flex
+                justify-content: space-between
+
+                .privac a
+                    padding-left: 2em
