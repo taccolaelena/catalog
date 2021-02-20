@@ -2,6 +2,11 @@
   .hamburger-menu {
     display: none;
   }
+
+  .menu_main {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
 }
 @media (min-width: 481px) and (max-width: 992px) {
   #menu-toggle {
@@ -80,7 +85,7 @@
     padding: 12px 24px;
     color: #8073c0;
     font-size: 0.85rem;
-    font-weight: 10000;
+    font-weight: 100;
     text-decoration: none;
     transition-duration: 0.25s;
   }
@@ -103,8 +108,15 @@
     transition: all 0.2s;
   }
 
+  main .menu_main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   footer {
     padding: 0 5%;
+    margin: 0;
     transition: all 0.2s;
     font-size: 12px;
   }
@@ -218,16 +230,28 @@
   }
 
   main .content h2 {
-    font-size: 18px;
+    font-size: 20px;
+    text-align: center;
   }
 
   main .menu_main {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .img-contaner {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h4 {
+    text-align: center;
   }
 
   footer {
     padding: 0 1%;
+    margin: 0;
     transition: all 0.2s;
     font-size: 10px;
   }

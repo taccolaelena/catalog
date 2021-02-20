@@ -4,19 +4,22 @@ html {
 html body {
   margin: 0;
 }
-html header {
+html body header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 65px;
   border-bottom: 1px solid #dfe2e6;
   padding: 0 20%;
+  position: fixed;
+  background-color: white;
+  z-index: 99;
 }
-html .menu ul {
+html body header .menu ul {
   list-style-type: none;
   display: flex;
 }
-html .menu ul li {
+html body header .menu ul li {
   flex-direction: row;
   margin: 0 1rem;
   color: #8073c0;
@@ -25,40 +28,37 @@ html .menu ul li {
   display: flex;
   align-items: center;
 }
-html .menu ul a {
+html body header .menu ul a {
   text-decoration: none;
 }
-html .menu ul li:hover {
+html body header .menu ul li:hover {
   color: #059bff;
   border-bottom: 1px solid #059bff;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #059bff;
 }
-html .logo img {
+html body header .logo img {
   height: 1.5rem;
 }
-
-main {
+html main {
   font-family: "Lato", sans-serif;
   background-color: whitesmoke;
   padding: 0 20% 4rem;
 }
-main h1 {
+html main h1 {
   font-size: 48px;
   font-weight: 500;
   text-align: center;
   margin: 0;
   padding-top: 4rem;
 }
-main .menu_main {
+html main .menu_main {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
   height: 2em;
   margin: 4rem 0;
 }
-main .menu_main select, main .menu_main form {
+html main .menu_main select, html main .menu_main form {
   font-size: 14px;
   height: 2rem;
   width: 300px;
@@ -69,58 +69,58 @@ main .menu_main select, main .menu_main form {
   background-color: white;
   padding: 0 5px;
 }
-main .menu_main form {
+html main .menu_main form {
   display: flex;
   justify-content: space-between;
 }
-main .menu_main form input {
+html main .menu_main form input {
   border: none;
   outline: none;
 }
-main .menu_main form button {
+html main .menu_main form button {
   background-color: white;
   border: none;
   color: grey;
 }
-main .menu_main select:focus, main .menu_main select:hover, main .menu_main form:focus, main .menu_main form:hover {
+html main .menu_main select:focus, html main .menu_main select:hover, html main .menu_main form:focus, html main .menu_main form:hover {
   border: 1px solid #059bff;
   outline: none;
   border-radius: 5px;
 }
-main h2 {
+html main h2 {
   font-weight: 500;
 }
-main .trendeng_episodes {
+html main .trendeng_episodes {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-template-rows: 1fr 1fr;
   column-gap: 15px;
   row-gap: 10px;
 }
-main .trendeng_episodes a {
+html main .trendeng_episodes a {
   text-decoration: none;
   color: black;
 }
-main .trendeng_episodes a:hover {
+html main .trendeng_episodes a:hover {
   color: #059bff;
 }
-main .trendeng_episodes .component {
+html main .trendeng_episodes .component {
   display: flex;
   flex-direction: column;
   position: relative;
 }
-main .trendeng_episodes .component img {
+html main .trendeng_episodes .component img {
   height: 200px;
   width: 200px;
   display: block;
   object-fit: cover;
 }
-main .trendeng_episodes .component h4 {
+html main .trendeng_episodes .component h4 {
   font-weight: 400;
   font-size: 14px;
   margin-top: 0.6rem;
 }
-main .trendeng_episodes .component .overlay {
+html main .trendeng_episodes .component .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -132,10 +132,10 @@ main .trendeng_episodes .component .overlay {
   transition: 0.3s ease;
   background-color: black;
 }
-main .trendeng_episodes .component:hover .overlay {
+html main .trendeng_episodes .component:hover .overlay {
   opacity: 0.6;
 }
-main .trendeng_episodes .component:hover .overlay .icon {
+html main .trendeng_episodes .component:hover .overlay .icon {
   color: white;
   font-size: 100px;
   position: absolute;
@@ -145,39 +145,39 @@ main .trendeng_episodes .component:hover .overlay .icon {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-main .trendeng_episodes .component:hover .overlay .icon .fa fa-play-circle-o:hover {
+html main .trendeng_episodes .component:hover .overlay .icon .fa fa-play-circle-o:hover {
   color: white;
 }
-main .miss-shows, main .miss-podcasters {
+html main .miss-shows, html main .miss-podcasters {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-template-rows: 1fr;
   column-gap: 15px;
 }
-main .miss-shows a, main .miss-podcasters a {
+html main .miss-shows a, html main .miss-podcasters a {
   text-decoration: none;
   color: black;
 }
-main .miss-shows a:hover, main .miss-podcasters a:hover {
+html main .miss-shows a:hover, html main .miss-podcasters a:hover {
   color: #059bff;
 }
-main .miss-shows .component, main .miss-podcasters .component {
+html main .miss-shows .component, html main .miss-podcasters .component {
   display: flex;
   flex-direction: column;
   position: relative;
 }
-main .miss-shows .component img, main .miss-podcasters .component img {
+html main .miss-shows .component img, html main .miss-podcasters .component img {
   height: 200px;
   width: 200px;
   display: block;
   object-fit: cover;
 }
-main .miss-shows .component h4, main .miss-podcasters .component h4 {
+html main .miss-shows .component h4, html main .miss-podcasters .component h4 {
   font-weight: 400;
   font-size: 14px;
   margin-top: 0.6rem;
 }
-main .miss-shows .component .overlay, main .miss-podcasters .component .overlay {
+html main .miss-shows .component .overlay, html main .miss-podcasters .component .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -189,10 +189,10 @@ main .miss-shows .component .overlay, main .miss-podcasters .component .overlay 
   transition: 0.3s ease;
   background-color: black;
 }
-main .miss-shows .component:hover .overlay, main .miss-podcasters .component:hover .overlay {
+html main .miss-shows .component:hover .overlay, html main .miss-podcasters .component:hover .overlay {
   opacity: 0.6;
 }
-main .miss-shows .component:hover .overlay .icon, main .miss-podcasters .component:hover .overlay .icon {
+html main .miss-shows .component:hover .overlay .icon, html main .miss-podcasters .component:hover .overlay .icon {
   color: white;
   font-size: 100px;
   position: absolute;
@@ -202,62 +202,62 @@ main .miss-shows .component:hover .overlay .icon, main .miss-podcasters .compone
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-main .miss-shows .component:hover .overlay .icon .fa fa-play-circle-o:hover, main .miss-podcasters .component:hover .overlay .icon .fa fa-play-circle-o:hover {
+html main .miss-shows .component:hover .overlay .icon .fa fa-play-circle-o:hover, html main .miss-podcasters .component:hover .overlay .icon .fa fa-play-circle-o:hover {
   color: white;
 }
-
-footer {
+html footer {
   background-color: #231e29;
   padding: 0 20% 40px 20%;
   color: white;
   font-weight: 100;
   font-size: 16px;
 }
-footer h4 {
+html footer h4 {
   font-weight: 100;
 }
-footer .content-footer {
+html footer .content-footer {
   display: grid;
   grid-template-columns: 20% 1fr 20%;
   grid-template-rows: 1fr 15%;
 }
-footer .content-footer a {
+html footer .content-footer a {
   text-decoration: none;
   color: white;
 }
-footer .content-footer a:hover {
+html footer .content-footer a:hover {
   text-decoration: underline;
 }
-footer .content-footer .logo {
+html footer .content-footer .logo {
   justify-self: start;
   align-self: center;
 }
-footer .content-footer .list-footer {
+html footer .content-footer .list-footer {
   justify-self: end;
   align-self: top;
   padding: 2rem 20% 0 0;
 }
-footer .content-footer .list-footer ul {
+html footer .content-footer .list-footer ul {
   list-style-type: none;
 }
-footer .content-footer .list-footer ul li {
+html footer .content-footer .list-footer ul li {
   line-height: 3;
 }
-footer .content-footer .contact {
+html footer .content-footer .contact {
   padding-top: 3rem;
 }
-footer .content-footer .contact .mailto {
+html footer .content-footer .contact .mailto {
   line-height: 0.2;
   padding-bottom: 3rem;
 }
-footer .content-footer .contact .community {
+html footer .content-footer .contact .community {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
-footer .content-footer .contact .community a {
+html footer .content-footer .contact .community a {
   padding-right: 1rem;
 }
-footer .content-footer .copyright {
+html footer .content-footer .copyright {
   font-size: 13px;
   padding: 2em 0 1em 0;
   margin: 0;
@@ -265,8 +265,9 @@ footer .content-footer .copyright {
   grid-column-end: 4;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-footer .content-footer .copyright .privac a {
+html footer .content-footer .copyright .privac a {
   padding-left: 2em;
 }
 

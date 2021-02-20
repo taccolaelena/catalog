@@ -11,6 +11,9 @@ html
             height: 65px
             border-bottom: 1px solid rgb(223, 226, 230)
             padding: 0 20%
+            position: fixed
+            background-color: white
+            z-index: 99
 
             .menu ul
                 list-style-type: none
@@ -52,8 +55,6 @@ html
 
         .menu_main
             display: flex
-            flex-wrap: nowrap
-            justify-content: space-between
             height: 2em
             margin: 4rem 0
 
@@ -83,7 +84,6 @@ html
 
             select:focus, select:hover, form:focus, form:hover
                 border: 1px solid #059bff
-                // box-shadow: 0px 0px 5px 1px rgba(5, 155, 255, 0.29)
                 outline: none
                 border-radius: 5px
 
@@ -97,7 +97,7 @@ html
             grid-template-rows: 1fr 1fr
             column-gap: 15px
             row-gap: 10px
-
+            
             a
                 text-decoration: none
                 color: black
@@ -221,7 +221,7 @@ html
 
         .content-footer
             display: grid
-            grid-template-columns: 20% 1fr 20% 
+            grid-template-columns: 20% 1fr 20%
             grid-template-rows: 1fr 15%
 
             a
