@@ -231,6 +231,9 @@ html footer .content-footer .logo {
   justify-self: start;
   align-self: center;
 }
+html footer .content-footer .logo img {
+  height: 1.5rem;
+}
 html footer .content-footer .list-footer {
   justify-self: end;
   align-self: top;
