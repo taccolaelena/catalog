@@ -4,42 +4,104 @@ html
     body
         margin: 0
 
-        header
-            display: flex
-            align-items: center
-            justify-content: space-between
+        .header-wrapper
+            position: fixed
+            z-index: 99
+            width: 100%
             height: 65px
             border-bottom: 1px solid rgb(223, 226, 230)
-            padding: 0 20%
-            position: fixed
             background-color: white
-            z-index: 99
-
-            .menu ul
-                list-style-type: none
+            
+            header
                 display: flex
-
-                li
-                    flex-direction: row
-                    margin: 0 1rem
-                    color: rgb(128, 115, 192)
-                    font-size: 0.85rem
-                    height: 3rem
+                align-items: center
+                justify-content: space-between
+                height: 65px
+                padding: 0 20%
+                
+                .menu ul
+                    list-style-type: none
                     display: flex
-                    align-items: center
 
-                a
-                    text-decoration: none
+                    li
+                        flex-direction: row
+                        margin: 0 1rem
+                        color: rgb(128, 115, 192)
+                        font-size: 0.85rem
+                        height: 3rem
+                        display: flex
+                        align-items: center
 
-                li:hover
-                    color: #059bff
-                    border-bottom: 1px solid #059bff
-                    border-bottom-width: 1px
-                    border-bottom-style: solid
-                    border-bottom-color: rgb(5, 155, 255)
+                        a
+                            text-decoration: none
 
-            .logo img
-                height: 1.5rem
+                        li:hover
+                            color: #059bff
+                            border-bottom: 1px solid #059bff
+                            border-bottom-width: 1px
+                            border-bottom-style: solid
+                            border-bottom-color: rgb(5, 155, 255)
+
+                .logo img
+                    height: 1.5rem
+
+        main
+            font-family: 'Lato', sans-serif
+            background-color: rgb(245,245,245)
+            padding: 0 20% 4rem
+
+            h1
+                font-size: 48px
+                font-weight: 500
+                text-align: center
+                margin: 0
+                padding-top: 4rem
+
+            .menu_main
+                display: flex
+                height: 2em
+                margin: 4rem 0
+
+                select, form
+                    font-size: 14px
+                    height: 2rem
+                    width: 300px
+                    display: inline-block
+                    color: grey
+                    border-radius: 5px 5px
+                    border: 1px solid lightgrey
+                    background-color: white
+                    padding: 0 5px
+
+                form
+                    display: flex
+                    justify-content: space-between
+
+                    input.menu ul
+                        list-style-type: none
+                        display: flex
+
+                    li
+                        flex-direction: row
+                        margin: 0 1rem
+                        color: rgb(128, 115, 192)
+                        font-size: 0.85rem
+                        height: 3rem
+                        display: flex
+                        align-items: center
+
+                    a
+                        text-decoration: none
+
+                    li:hover
+                        color: #059bff
+                        border-bottom: 1px solid #059bff
+                        border-bottom-width: 1px
+                        border-bottom-style: solid
+                        border-bottom-color: rgb(5, 155, 255)
+
+                .logo img
+                    height: 1.5rem
 
     main
         font-family: 'Lato', sans-serif
@@ -97,7 +159,7 @@ html
             grid-template-rows: 1fr 1fr
             column-gap: 15px
             row-gap: 10px
-            
+
             a
                 text-decoration: none
                 color: black
@@ -234,10 +296,10 @@ html
             .logo
                 justify-self: start
                 align-self: center
-                
-                img 
+
+                img
                     height: 1.5rem
-            
+
             .list-footer
                 justify-self: end
                 align-self: top
