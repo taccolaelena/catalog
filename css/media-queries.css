@@ -112,9 +112,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .dropdown, .search {
+    margin: 0.3rem 0;
+  }
+  .dropdown h4, .search h4 {
     text-align: center;
     font-size: 10px;
   }
+
   footer {
     padding: 0 5%;
     margin: 0;
@@ -189,9 +196,6 @@
     visibility: hidden;
     top: 0;
     right: 100%;
-    width: 150px;
-    height: 15%;
-    margin: 0;
     padding: 20px 0;
     list-style: none;
     background-color: white;

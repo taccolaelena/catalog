@@ -9,7 +9,7 @@
 @media  (min-width : 481px) and (max-width : 992px)
     #menu-toggle
         opacity: 0
-        
+
     #menu-toggle:checked ~ .menu-btn > span
         transform: rotate(45deg)
 
@@ -60,7 +60,6 @@
         top: 8px
 
     .menu-box
-        // z-index: 999
         display: block
         position: fixed
         visibility: hidden
@@ -76,10 +75,7 @@
         list-style: none
 
         background-color: white
-        // box-shadow: 1px 0px 6px rgba(0, 0, 0, .2)
         margin: 65px 5% 0 0
-
-        // transition-duration: .25s
 
     .menu-item
         display: block
@@ -88,7 +84,6 @@
         color: rgb(128, 115, 192)
         font-size: 0.85rem
 
-        // font-family: 'Roboto', sans-serif
         font-weight: 100
 
         text-decoration: none
@@ -109,19 +104,22 @@
         padding: 0 5%
         transition: all .2s
 
+
     main .menu_main
         display: flex
         flex-wrap: wrap
         justify-content: center
 
-        h4
-        text-align: center
-        font-size: 10px
+    .dropdown, .search
+        margin: .3rem 0
 
+        h4
+            text-align: center
+            font-size: 10px
 
     footer
         padding: 0 5%
-        margin: 0 
+        margin: 0
         transition: all .2s
         font-size: 12px
 
@@ -182,26 +180,17 @@
         top: 8px
 
     .menu-box
-        // z-index: 999
         display: block
         position: fixed
         visibility: hidden
         top: 0
         right: 100%
-
-        width: 150px
-        height: 15%
-
-        margin: 0
         padding: 20px 0
 
         list-style: none
 
         background-color: white
-        // box-shadow: 1px 0px 6px rgba(0, 0, 0, .2)
         margin: 65px 1% 0 0
-
-        // transition-duration: .25s
 
     .menu-item
         display: block
@@ -210,7 +199,6 @@
         color: rgb(128, 115, 192)
         font-size: 0.85rem
 
-        // font-family: 'Roboto', sans-serif
         font-weight: 10000
 
         text-decoration: none
