@@ -170,13 +170,13 @@ html main .miss-podcasters, html main .miss-shows {
 }
 html main .img-grid-contaner {
   justify-self: center;
+  width: 100%;
 }
 html .img-square {
   border: none;
   position: relative;
   text-align: center;
-  width: 10vw;
-  height: 10vw;
+  width: 100%;
 }
 html .img-square .img-podcasters {
   padding-top: 100%;
