@@ -152,109 +152,50 @@ html main .menu_main select:focus, html main .menu_main select:hover, html main 
 html main h2 {
   font-weight: 500;
 }
-html main .trendeng_episodes {
+html main .miss-podcasters, html main .miss-shows {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-template-rows: 1fr 1fr;
-  column-gap: 15px;
-  row-gap: 10px;
-}
-html main .trendeng_episodes a {
-  text-decoration: none;
-  color: black;
-}
-html main .trendeng_episodes a:hover {
-  color: #059bff;
-}
-html main .trendeng_episodes .component {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-html main .trendeng_episodes .component img {
-  height: 200px;
-  width: 200px;
-  display: block;
-  object-fit: cover;
-}
-html main .trendeng_episodes .component h4 {
-  font-weight: 400;
-  font-size: 14px;
-  margin-top: 0.6rem;
-}
-html main .trendeng_episodes .component .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 200px;
-  width: 200px;
-  opacity: 0;
-  transition: 0.3s ease;
-  background-color: black;
-}
-html main .trendeng_episodes .component:hover .overlay {
-  opacity: 0.6;
-}
-html main .trendeng_episodes .component:hover .overlay .icon {
-  color: white;
-  font-size: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-html main .trendeng_episodes .component:hover .overlay .icon .fa fa-play-circle-o:hover {
-  color: white;
-}
-html main .miss-shows, html main .miss-podcasters {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1em 15px;
   grid-template-rows: 1fr;
-  column-gap: 15px;
+  margin: 1em 0 3em;
 }
-html main .miss-shows a, html main .miss-podcasters a {
+html main .img-square {
+  border: none;
+  position: relative;
+  text-align: center;
+  width: 10vw;
+  height: 10vw;
+}
+html main .img-square .img-podcasters {
+  padding-top: 100%;
+  background-size: cover;
+}
+html main .signature a {
   text-decoration: none;
   color: black;
 }
-html main .miss-shows a:hover, html main .miss-podcasters a:hover {
-  color: #059bff;
-}
-html main .miss-shows .component, html main .miss-podcasters .component {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-html main .miss-shows .component img, html main .miss-podcasters .component img {
-  height: 200px;
-  width: 200px;
-  display: block;
-  object-fit: cover;
-}
-html main .miss-shows .component h4, html main .miss-podcasters .component h4 {
+html main .signature a h4 {
   font-weight: 400;
   font-size: 14px;
   margin-top: 0.6rem;
 }
-html main .miss-shows .component .overlay, html main .miss-podcasters .component .overlay {
+html main .signature a:hover {
+  color: #059bff;
+}
+html main .play-circle-button {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 200px;
-  width: 200px;
   opacity: 0;
   transition: 0.3s ease;
   background-color: black;
 }
-html main .miss-shows .component:hover .overlay, html main .miss-podcasters .component:hover .overlay {
+html main .img-square:hover .play-circle-button {
   opacity: 0.6;
 }
-html main .miss-shows .component:hover .overlay .icon, html main .miss-podcasters .component:hover .overlay .icon {
+html main .img-square:hover .play-circle-button .icon {
   color: white;
   font-size: 100px;
   position: absolute;
@@ -264,8 +205,38 @@ html main .miss-shows .component:hover .overlay .icon, html main .miss-podcaster
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-html main .miss-shows .component:hover .overlay .icon .fa fa-play-circle-o:hover, html main .miss-podcasters .component:hover .overlay .icon .fa fa-play-circle-o:hover {
+html main .img-square:hover .play-circle-button .icon .fa fa-play-circle-o:hover {
   color: white;
+}
+html main .img-2-1 {
+  background-image: url("../images/Funny Over 50.png");
+}
+html main .img-2-2 {
+  background-image: url("../images/Third Space Thoughts to Policy.png");
+}
+html main .img-2-3 {
+  background-image: url("../images/The After Party.jpeg");
+}
+html main .img-2-4 {
+  background-image: url("../images/Watch Chat Repeat.png");
+}
+html main .img-2-5 {
+  background-image: url("../images/The Broken Lords.jpeg");
+}
+html main .img-3-1 {
+  background-image: url("../images/episode 25 Co parenting.jpeg");
+}
+html main .img-3-2 {
+  background-image: url("../images/164 Unwritten Rules.jpeg");
+}
+html main .img-3-3 {
+  background-image: url("../images/Episode 68: Why Consistency Is More Important Than Passion in Business.png");
+}
+html main .img-3-4 {
+  background-image: url("../images/Bee-Attitudes.jpeg");
+}
+html main .img-3-5 {
+  background-image: url("../images/The Beautiful Grit.jpeg");
 }
 html footer {
   background-color: #231e29;
