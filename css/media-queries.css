@@ -112,8 +112,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
+    font-size: 10px;
   }
-
   footer {
     padding: 0 5%;
     margin: 0;
@@ -247,6 +248,7 @@
 
   h4 {
     text-align: center;
+    font-size: 8px;
   }
 
   footer {

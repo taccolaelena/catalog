@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
@@ -152,12 +153,20 @@ html main .menu_main select:focus, html main .menu_main select:hover, html main 
 html main h2 {
   font-weight: 500;
 }
+html main .trending-episodes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1em;
+  row-gap: 4em;
+  grid-template-rows: 1fr 1fr;
+  margin: 1em 0 5rem;
+}
 html main .miss-podcasters, html main .miss-shows {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 1em 15px;
   grid-template-rows: 1fr;
-  margin: 1em 0 3em;
+  margin: 1em 0 5rem;
 }
 html main .img-square {
   border: none;
@@ -207,6 +216,36 @@ html main .img-square:hover .play-circle-button .icon {
 }
 html main .img-square:hover .play-circle-button .icon .fa fa-play-circle-o:hover {
   color: white;
+}
+html main .img-1-1 {
+  background-image: url("../images/jast jazz.jpeg");
+}
+html main .img-1-2 {
+  background-image: url("../images/Conversations matter.jpeg");
+}
+html main .img-1-3 {
+  background-image: url("../images/Season 11 Episode 2.png");
+}
+html main .img-1-4 {
+  background-image: url("../images/Psalms week.jpeg");
+}
+html main .img-1-5 {
+  background-image: url("../images/Season 3: Ep: 13.png");
+}
+html main .img-1-6 {
+  background-image: url("../images/The Power of Togetherness.jpeg");
+}
+html main .img-1-7 {
+  background-image: url("../images/An Outsider's Perspective.png");
+}
+html main .img-1-8 {
+  background-image: url("../images/الحلقة 1 - حوار إذاعي حول تطوير التعليم في المجتمعات الإسلامية مع الدكتورة إلهام ناصر.jpeg");
+}
+html main .img-1-9 {
+  background-image: url("../images/Winter is Still Here.png");
+}
+html main .img-1-10 {
+  background-image: url("../images/Holy bible.jpeg");
 }
 html main .img-2-1 {
   background-image: url("../images/Funny Over 50.png");
