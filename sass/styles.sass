@@ -23,7 +23,6 @@ html
                     list-style-type: none
                     display: flex
 
-                    
                 a
                     text-decoration: none
 
@@ -35,7 +34,6 @@ html
                         height: 3rem
                         display: flex
                         align-items: center
-
 
                     li:hover
                         color: #059bff
@@ -168,25 +166,21 @@ html
 
         .miss-podcasters, .miss-shows
             display: grid
-
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
             grid-gap: 1em 15px
             grid-template-rows: 1fr
             margin: 1em 0 5rem
 
-        .img-grid-contaner
-            justify-self: center
+        .img-square
+            border: none
+            position: relative
+            text-align: center
             width: 100%
+            // height: 10vw
 
-    .img-square
-        border: none
-        position: relative
-        text-align: center
-        width: 100%
-
-        .img-podcasters
-            padding-top: 100%
-            background-size: cover
+            .img-podcasters
+                padding-top: 100%
+                background-size: cover
 
         .signature a
             text-decoration: none

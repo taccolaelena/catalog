@@ -172,33 +172,29 @@ html main .miss-podcasters, html main .miss-shows {
   grid-template-rows: 1fr;
   margin: 1em 0 5rem;
 }
-html main .img-grid-contaner {
-  justify-self: center;
-  width: 100%;
-}
-html .img-square {
+html main .img-square {
   border: none;
   position: relative;
   text-align: center;
   width: 100%;
 }
-html .img-square .img-podcasters {
+html main .img-square .img-podcasters {
   padding-top: 100%;
   background-size: cover;
 }
-html .img-square .signature a {
+html main .signature a {
   text-decoration: none;
   color: black;
 }
-html .img-square .signature a h4 {
+html main .signature a h4 {
   font-weight: 400;
   font-size: 14px;
   margin-top: 0.6rem;
 }
-html .img-square .signature a:hover {
+html main .signature a:hover {
   color: #059bff;
 }
-html .img-square .play-circle-button {
+html main .play-circle-button {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -208,10 +204,10 @@ html .img-square .play-circle-button {
   transition: 0.3s ease;
   background-color: black;
 }
-html .img-square .img-square:hover .play-circle-button {
+html main .img-square:hover .play-circle-button {
   opacity: 0.6;
 }
-html .img-square .img-square:hover .play-circle-button .icon {
+html main .img-square:hover .play-circle-button .icon {
   color: white;
   font-size: 100px;
   position: absolute;
@@ -221,67 +217,67 @@ html .img-square .img-square:hover .play-circle-button .icon {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-html .img-square .img-square:hover .play-circle-button .icon .fa fa-play-circle-o:hover {
+html main .img-square:hover .play-circle-button .icon .fa fa-play-circle-o:hover {
   color: white;
 }
-html .img-square .img-1-1 {
+html main .img-1-1 {
   background-image: url("../images/jast jazz.jpeg");
 }
-html .img-square .img-1-2 {
+html main .img-1-2 {
   background-image: url("../images/Conversations matter.jpeg");
 }
-html .img-square .img-1-3 {
+html main .img-1-3 {
   background-image: url("../images/Season 11 Episode 2.png");
 }
-html .img-square .img-1-4 {
+html main .img-1-4 {
   background-image: url("../images/Psalms week.jpeg");
 }
-html .img-square .img-1-5 {
+html main .img-1-5 {
   background-image: url("../images/Season 3: Ep: 13.png");
 }
-html .img-square .img-1-6 {
+html main .img-1-6 {
   background-image: url("../images/The Power of Togetherness.jpeg");
 }
-html .img-square .img-1-7 {
+html main .img-1-7 {
   background-image: url("../images/An Outsider's Perspective.png");
 }
-html .img-square .img-1-8 {
+html main .img-1-8 {
   background-image: url("../images/الحلقة 1 - حوار إذاعي حول تطوير التعليم في المجتمعات الإسلامية مع الدكتورة إلهام ناصر.jpeg");
 }
-html .img-square .img-1-9 {
+html main .img-1-9 {
   background-image: url("../images/Winter is Still Here.png");
 }
-html .img-square .img-1-10 {
+html main .img-1-10 {
   background-image: url("../images/Holy bible.jpeg");
 }
-html .img-square .img-2-1 {
+html main .img-2-1 {
   background-image: url("../images/Funny Over 50.png");
 }
-html .img-square .img-2-2 {
+html main .img-2-2 {
   background-image: url("../images/Third Space Thoughts to Policy.png");
 }
-html .img-square .img-2-3 {
+html main .img-2-3 {
   background-image: url("../images/The After Party.jpeg");
 }
-html .img-square .img-2-4 {
+html main .img-2-4 {
   background-image: url("../images/Watch Chat Repeat.png");
 }
-html .img-square .img-2-5 {
+html main .img-2-5 {
   background-image: url("../images/The Broken Lords.jpeg");
 }
-html .img-square .img-3-1 {
+html main .img-3-1 {
   background-image: url("../images/episode 25 Co parenting.jpeg");
 }
-html .img-square .img-3-2 {
+html main .img-3-2 {
   background-image: url("../images/164 Unwritten Rules.jpeg");
 }
-html .img-square .img-3-3 {
+html main .img-3-3 {
   background-image: url("../images/Episode 68: Why Consistency Is More Important Than Passion in Business.png");
 }
-html .img-square .img-3-4 {
+html main .img-3-4 {
   background-image: url("../images/Bee-Attitudes.jpeg");
 }
-html .img-square .img-3-5 {
+html main .img-3-5 {
   background-image: url("../images/The Beautiful Grit.jpeg");
 }
 html footer {
