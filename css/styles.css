@@ -24,7 +24,10 @@ html body .header-wrapper header .menu ul {
   list-style-type: none;
   display: flex;
 }
-html body .header-wrapper header .menu ul li {
+html body .header-wrapper header a {
+  text-decoration: none;
+}
+html body .header-wrapper header a li {
   flex-direction: row;
   margin: 0 1rem;
   color: #8073c0;
@@ -33,10 +36,7 @@ html body .header-wrapper header .menu ul li {
   display: flex;
   align-items: center;
 }
-html body .header-wrapper header .menu ul li a {
-  text-decoration: none;
-}
-html body .header-wrapper header .menu ul li li:hover {
+html body .header-wrapper header a li:hover {
   color: #059bff;
   border-bottom: 1px solid #059bff;
   border-bottom-width: 1px;
