@@ -181,6 +181,7 @@ html main .img-square {
 html main .img-square .img-podcasters {
   padding-top: 100%;
   background-size: cover;
+  position: relative;
 }
 html main .signature a {
   text-decoration: none;
