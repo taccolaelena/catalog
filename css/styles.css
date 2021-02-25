@@ -74,6 +74,10 @@ html body main .menu_main select, html body main .menu_main form {
   background-color: white;
   padding: 0 5px;
 }
+html body main .menu_main select {
+  height: 34px;
+  width: 312px;
+}
 html body main .menu_main form {
   display: flex;
   justify-content: space-between;

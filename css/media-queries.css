@@ -234,6 +234,10 @@
     font-size: 24px;
   }
 
+  .dropdown, .search {
+    margin: 0.3rem 0;
+  }
+
   main .content h2 {
     font-size: 20px;
     text-align: center;
